@@ -35,12 +35,6 @@ class Translator:
         self.translator = deepl.Translator(self.api_key)
 ```
 
-또는 환경 변수를 사용하여 API Key를 설정할 수도 있습니다.
-
-```bash
-export DEEPL_API_KEY=your_deepl_api_key_here
-```
-
 ## 실행 방법
 
 프로젝트를 실행하기 위해서는 FastAPI 애플리케이션을 실행해야 합니다. 다음 명령어를 사용하여 `main.py` 파일을 실행하세요:
