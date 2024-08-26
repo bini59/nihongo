@@ -25,10 +25,11 @@ async def download_article_pdf(url: str):
 
         # 기사 본문 번역 및 처리
         # 번역 및 데이터 가공 작업은 별도 서비스에서 진행
+        article_data = pdf_generator.process_data(article_content)
 
         # PDF 파일 생성
         pdf_file_path = "/tmp/article_translation.pdf"
-        pdf_generator.generate_pdf(article_data=article_content, file_path=pdf_file_path)
+        pdf_generator.generate_pdf(article_data=article_data, file_path=pdf_file_path)
 
         # 파일 반환
         return FileResponse(pdf_file_path, media_type='application/pdf', filename="article_translation.pdf")
