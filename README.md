@@ -25,16 +25,8 @@ pip install -r requirements.txt
 ### 2. DeepL API Key 설정
 
 이 프로그램은 **DeepL API**를 사용하여 일본어 문장을 한국어로 번역합니다. 따라서 DeepL API Key가 필요합니다. [DeepL](https://www.deepl.com/pro-api)에서 API Key를 발급받은 후, 프로그램이 이를 사용할 수 있도록 설정해야 합니다.
-
-API 키는 `Translation` 클래스 내에서 `self.api_key` 변수에 설정됩니다.
-
-```python
-class Translator:
-    def __init__(self):
-        self.api_key = "YOUR_DEEPL_API_KEY"  # 여기에 API Key를 설정하세요
-        self.translator = deepl.Translator(self.api_key)
-```
-
+![image](https://github.com/user-attachments/assets/a31daf94-0f3e-437c-96ce-d724a7800877)
+오른쪽 상단, API_KEY 부분에 발급받은 key를 입력 후 사용하시면 됩니다.
 ## 실행 방법
 
 프로젝트를 실행하기 위해서는 FastAPI 애플리케이션을 실행해야 합니다. 다음 명령어를 사용하여 `main.py` 파일을 실행하세요:
