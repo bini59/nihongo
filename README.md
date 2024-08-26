@@ -48,4 +48,4 @@ uvicorn main:app --reload
 ## 주요 기능
 
 - **/generate-pdf**: 일본어 기사를 번역하고, PDF로 변환하는 API 엔드포인트
-- **/news**: 특정 카테고리의 일본어 뉴스를 가져오는 API 엔드포인트
+- ~**/news**: 특정 카테고리의 일본어 뉴스를 가져오는 API 엔드포인트~
