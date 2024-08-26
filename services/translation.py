@@ -3,8 +3,8 @@ import deepl
 import logging
 
 class Translator:
-    def __init__(self):
-        self.api_key = os.getenv("DEEPL_API_KEY")
+    def __init__(self, api_key: str):
+        self.api_key = api_key
         self.translator = deepl.Translator(self.api_key)
 
     def translate_sentence(self, sentence: str, source_lang: str = "JA", target_lang: str = "KO") -> str:

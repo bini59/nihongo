@@ -1,9 +1,9 @@
-from translation import Translator as Translation
-from kana_converter import KanaConverter
+from services.translation import Translator as Translation
+from services.kana_converter import KanaConverter
 
 class TranslationManager:
-    def __init__(self):
-        self.translator = Translation()
+    def __init__(self, api_key: str):
+        self.translator = Translation(api_key)
         self.kana_converter = KanaConverter()
 
     def process_sentence(self, sentence: str) -> dict:
