@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+reportlab
+deepl
+fugashi
+mecab-python3
+unidic-lite
+pytest
+bs4
